@@ -1,0 +1,5 @@
+nres 121    # number of residues
+nato 2039   # number of atoms
+nfra 6000    # number of frames
+tres 0.75    # treshold for exclusion list
+tred 3.0   # distance treshold to compute the distance matrix
