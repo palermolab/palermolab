@@ -2,11 +2,11 @@
 
 Analysis codes are written in Fortran 90 and a README file is provided to compute: (a) Environment Perturbation Score; (b) Correlation analysis and (c) Allosteric pathways.
 
-edges.f90 is the program that reads the following files:
+**to edges.f90** is the program that reads the following files:
 1) edges.inp
 2) XXX.pdb
 
-edges.inp is the input file that contains the following variables:
+**edges.inp** is the input file that contains the following variables:
 
     nres: the number of residues in the protein
     nframe: the number of frames in the file XXX.pdb
@@ -17,8 +17,8 @@ XXX.pdb is the trajectory to analyze in pdb format.
 
 After compilation, the code is executed just by typing its name in the terminal (it doesn't need any additional commands).
 As am output, the script returns two files:
-notfour.txt - in this file there are provided  ordinal numbers residues either neighbouring to the analysed residue (e.g. 1 and 2, 4 and 5) or residue that are not frequently enough in contact with the analysed residue
-distance-mat.txt - here the contact matrix is provided, where the first and second column correspond do the ordinal numbers of residue pairs, while the third number represents the number of frames in which the residue pair was in contact (defined in the input file)
+**notfour.txt** - in this file there are provided  ordinal numbers residues either neighbouring to the analysed residue (e.g. 1 and 2, 4 and 5) or residue that are not frequently enough in contact with the analysed residue
+**distance-mat.txt** - here the contact matrix is provided, where the first and second column correspond do the ordinal numbers of residue pairs, while the third number represents the number of frames in which the residue pair was in contact (defined in the input file)
 
 In order to reproduce the results in the manuscript we need to generate one distance-mat.txt file
 for the wild type protein and for the mutants.
@@ -30,7 +30,7 @@ After that, we employ the matdiff.f90 which reads the distance-mat.txt files of 
 and computes the difference between these matrices. After that it computes the EP-SCORE which is written in a file named
 "XXX-WT-contact-distorsion.txt", where XXX is the name of one of the mutants.
 
-correkation.f90 is the program that computes the correlation matrix.
+**correkation.f90** is the program that computes the correlation matrix.
 In order to utilize this code one needs to have either
 1. intel fortran compiler
 or
@@ -62,7 +62,7 @@ centrality_eigenvec.txt
 centrality_eigenval.txt 
 
 
-paths.sh:
+**paths.sh**:
 This script computes the paths of maximized correlation.
 As input files, the user should provide the correlation matrix from CORRELATION+CENTRALITY script (dist.txt) and exclusion list from CONTACT-MAP-EXCLUSSION-LIST script (notfour.txt). The user should also provide an additional input file (paths.txt) that contains the ordinal number for the beginning and the end of the pathway. The script can be executed as follows:
 paths.sh 10
