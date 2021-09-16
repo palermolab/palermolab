@@ -1,4 +1,4 @@
-Analysis codes to decrypt allosteric mechanisms
+# Analysis codes to decrypt allosteric mechanisms
 
 Analysis codes are written in Fortran 90 and a README file is provided to compute: (a) Environment Perturbation Score; (b) Correlation analysis and (c) Allosteric pathways.
 
