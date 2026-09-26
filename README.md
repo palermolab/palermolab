@@ -1,5 +1,5 @@
 # Welcome to the Palermo Lab GitHub!
-We are a [Computational Biophysics Group](https://palermolab.com/) at the [University of California Riverside](https://www.ucr.edu/). 
+We are a [Computational Biophysics Group](https://palermolab.com/) at the [University of California Los Angeles](https://www.ucla.edu/). 
 
 Future medicines will modify DNA and RNA to treat a wide range of diseases. Our lab drives this transformation by advancing computer simulations and deep learning approaches to characterize and engineer genome editing systems that are transforming life sciences.
 
